@@ -31,5 +31,12 @@ NIM: 2341728038 <br>
 Kelas: TI - 3A
 
 1. Menjalankan project next.js
-![Screenshoot](assets-report/W06-1.png)
-2. 
+![Screenshoot](assets-report/W06-1.png) <br>
+2. Mengakses http://localhost:3000/login, dan klik tombol login. Kemudian lakukan refresh page berkali-kali (jika perlu restart npm run dev nya). Simpulkan apa yang terjadi ?
+![Screenshoot](assets-report/W06-2.png) <br>
+Saat kita menjalankan http://localhost:3000/login, dan klik tombol login maka akan berhasil muncul halaman yay, berhasil login!!!. Namun, jika dilakukan refresh secara berulang maka akan tampil kode error "Text content does not match server-rendered HTML", hal ini terjadi karena konten yang dihasilkan oleh React pada sisi klien tidak cocok dengan konten yang dihasilkan saat server-side rendering (SSR).
+![Screenshoot](assets-report/W06-2a.png) <br>
+Baris 25 dan 30 terdapat method parse(), apa yang terjadi jika kita tidak menggunakan method tersebut? 
+Kemudian pada baris 25 dan 30, ketika kita tidak menggunakan method tersebut maka akan menuliskan kode jsx-nya secara langsung tanpa mengubah string menjadi elemen React. Karena sesuai dengan fungsinya, Method parse() digunakan untuk mengubah string HTML menjadi elemen-elemen React yang dapat dirender di dalam komponen React. Penggunaan parse() biasanya digunakan ketika memiliki string HTML yang ingin dirender di dalam komponen React.
+
+3. 
