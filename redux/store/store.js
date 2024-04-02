@@ -1,5 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import authReducer from '../auth/authSlice';
+import counterReducer from '../counter/naikTurunSlice';
 import storage from 'redux-persist/lib/storage';
 import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 
@@ -11,6 +12,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
    auth: authReducer,
+   counter: counterReducer //tambahan reducer untuk counter
+   // tambahkan disini jika ingin menambahkan reducer lainnya.
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
