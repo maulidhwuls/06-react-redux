@@ -7,6 +7,7 @@ function CounterNaikTurun()     {
     //pilih reducer counter yang telah didaftarkan pada store.js
     const {totalCounter} = useSelector((state: any) => state.counter);
 
+
     const dispatch = useDispatch();
 
     function tombolTambah(){

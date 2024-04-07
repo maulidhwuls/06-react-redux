@@ -39,4 +39,7 @@ Saat kita menjalankan http://localhost:3000/login, dan klik tombol login maka ak
 Baris 25 dan 30 terdapat method parse(), apa yang terjadi jika kita tidak menggunakan method tersebut? 
 Kemudian pada baris 25 dan 30, ketika kita tidak menggunakan method tersebut maka akan menuliskan kode jsx-nya secara langsung tanpa mengubah string menjadi elemen React. Karena sesuai dengan fungsinya, Method parse() digunakan untuk mengubah string HTML menjadi elemen-elemen React yang dapat dirender di dalam komponen React. Penggunaan parse() biasanya digunakan ketika memiliki string HTML yang ingin dirender di dalam komponen React.
 
-3. 
+3.  Jalankan di browser dengan url localhost:3000/counter, dan amati apa yang terjadi?
+![Screenshoot](assets-report/W06-3.png) <br>
+
+## Tugas Pertanyaan Praktikum

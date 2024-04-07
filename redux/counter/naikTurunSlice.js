@@ -15,4 +15,4 @@ export const naikTurunSlice = createSlice({
 });
 
 export const {tambahCounter, kurangCounter} = naikTurunSlice.actions;
-export default naikTurunSlice.reducers;
+export default naikTurunSlice.reducer;
