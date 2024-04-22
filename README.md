@@ -43,3 +43,16 @@ Kemudian pada baris 25 dan 30, ketika kita tidak menggunakan method tersebut mak
 ![Screenshoot](assets-report/W06-3.png) <br>
 
 ## Tugas Pertanyaan Praktikum
+1. useEffect adalah React Hook yang pada file ini berfungsi untuk menyinkronkan komponen dengan sistem eksternal. Atau dengan kata lain fungsi import { useEffect } from "react" dalam file _app.tsx adalah memungkinkan peenggunaan hook "useEffect" dalam komponen MyApp yang digunakan untuk memuat skrip JavaScript Bootstrap setelah aplikasi dirender.
+
+2. Dalam hal ini fungsi untuk memuat skrip JavaScript Bootstrap tidak akan dijalankan, karena tidak ada lagi penggunaan useEffect untuk memicu tindakan tersebut. Oleh karena itu, skrip JavaScript Bootstrap tidak akan dimuat secara otomatis saat aplikasi dimulai. Misalnya, komponen bootstrap yang membutuhkan javascript (seperti dropdown, modal, dan lain-lain) tidak berfungsi dengan benar. Kemudian, dari segi tampilan komponen yang mungkin membutuhkan gaya dari Bootstrap CSS dan file global CSS akan terlihat biasa saja tanpa memiliki fungsionalitas tambahan dari Bootstrap Javascript. Selain itu, juga akan terjadi kegagalan render yang menyebabkan aplikasi tidak menampilkan konten apapun pada user.
+
+3. Di React/Next.js, penggunaan className daripada class dalam tag HTML diperlukan karena JSX (JavaScript XML) adalah ekstensi sintaks JavaScript yang digunakan untuk menulis kode React. Jika kita menggunakan class dalam JSX, JavaScript akan menganggapnya sebagai kata kunci class yang digunakan untuk membuat objek, bukan sebagai atribut kelas dalam konteks HTML
+
+4. Next.js tidak memiliki pembatasan pada jumlah reducer yang dapat user gunakan dalam store Redux. User dapat mengatur store Redux-nya dengan banyak reducer sesuai kebutuhan aplikasi.
+
+5. File store.js biasanya digunakan untuk membuat dan mengonfigurasi store Redux dalam aplikasi Redux. Ini adalah tempat di mana user dapat mendefinisikan store Redux, menggabungkan reducer-reducer aplikasi, dan mungkin mengkonfigurasi middleware Redux.
+
+6. Kode *const { isLogin } = useSelector((state) => state.auth);* merupakan contoh penggunaan React Redux Hooks (useSelector dan useDispatch) dalam sebuah functional component di aplikasi React/Next.js. *useSelector* adalah hook yang digunakan untuk mengakses state dari store Redux dalam komponen functional. Sedangkan *state.auth* mengacu pada bagian dari state aplikasi yang berisi informasi tentang autentikasi pengguna untuk  mengambil nilai isLogin dari state Redux yang disimpan dalam store.
+
+7. *state.counter* merujuk ke bagian dari state aplikasi yang dikelola oleh reducer counter. Digunakan untuk mengambil nilai totalCounter dari state Redux yang dikelola oleh reducer counter, dan dispatch digunakan untuk memicu aksi Redux jika diperlukan.
